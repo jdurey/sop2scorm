@@ -13,7 +13,7 @@ Deterministic, zero-dependency Node.js CLI and ESM library that compiles Markdow
 
 > [!TIP]
 > **Need full PDF/DOCX SOP ingestion, 3-model blind-solved scenario assessments, 1080p30 presenter-bookended diagram walkthrough videos, and Microsoft Word (`.docx`) SME Citation Tables delivered in 48 hours?**
-> Inspect the live interactive flagship build and Policy-Diff sandbox at **[scorm.stillhumanacademy.com/pilot](https://scorm.stillhumanacademy.com/pilot)**.
+> Inspect the live interactive flagship build and Policy-Diff sandbox at **[scorm.stillhumanacademy.com/pilot](https://scorm.stillhumanacademy.com/pilot?src=github)**.
 
 ---
 

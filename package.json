@@ -1,0 +1,52 @@
+{
+  "name": "sop2scorm",
+  "version": "1.0.0",
+  "description": "Deterministic, zero-dependency Markdown-to-SCORM 1.2 & IMS QTI 2.1 compiler with paragraph-level source_id citation verification, SHA-256 lineage build receipts, and policy-diff impact analysis.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Joshua Durey / Still Human Academy <https://scorm.stillhumanacademy.com/pilot>",
+  "homepage": "https://scorm.stillhumanacademy.com/pilot",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jdurey/sop2scorm.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jdurey/sop2scorm/issues"
+  },
+  "bin": {
+    "sop2scorm": "./bin/sop2scorm.mjs"
+  },
+  "main": "./src/index.mjs",
+  "exports": {
+    ".": "./src/index.mjs"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "examples/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test test/sop2scorm.test.mjs"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "scorm",
+    "scorm-1.2",
+    "qti",
+    "qti-2.1",
+    "ims-qti",
+    "sop",
+    "docs-as-code",
+    "instructional-design",
+    "lms",
+    "workday-learning",
+    "cornerstone",
+    "reproducible-builds",
+    "edtech",
+    "compliance-training"
+  ]
+}

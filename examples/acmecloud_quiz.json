@@ -1,0 +1,72 @@
+[
+  {
+    "id": "Q_1",
+    "source_id": "SOP-FORENSICS-2.1",
+    "source_quote": "snapshot cloud audit logs, memory state, and active network socket tables into an immutable write-once forensic bucket",
+    "question": "An IAM session token triggers anomalous multi-tenant egress at 03:12 UTC. Which action must the Incident Commander execute first?",
+    "options": [
+      "Terminate the container immediately and wipe its local disk volume",
+      "Snapshot cloud audit logs, memory state, and active socket tables into the immutable forensic bucket before revoking credentials",
+      "Wait for the weekly security architecture review",
+      "Post the raw session token into the general engineering chat channel"
+    ],
+    "correct": 2,
+    "rationale": "Per SOP-FORENSICS-2.1, volatile forensic evidence must be snapshotted into the write-once bucket before revoking tokens or terminating containers."
+  },
+  {
+    "id": "Q_2",
+    "source_id": "SOP-CONTAIN-3.2",
+    "source_quote": "detach volumes and tag them `FORENSIC_HOLD` for post-incident root-cause analysis",
+    "question": "During Severity-1 workload isolation, how must the on-call engineer handle the affected container's disk volumes?",
+    "options": [
+      "Delete all volumes immediately to free cluster storage",
+      "Detach the volumes without deleting them and tag them FORENSIC_HOLD for root-cause analysis",
+      "Copy the volumes to a personal laptop over public Wi-Fi",
+      "Leave the workload connected to production egress while debugging"
+    ],
+    "correct": 2,
+    "rationale": "Per SOP-CONTAIN-3.2, disk volumes must never be deleted during containment; detach and tag them FORENSIC_HOLD."
+  },
+  {
+    "id": "Q_3",
+    "source_id": "SOP-SLA-4.2",
+    "source_quote": "within 4 Hours of containment confirmation",
+    "question": "After confirming containment of a Severity-1 multi-tenant incident, what is the maximum SLA window for initial executive and legal escalation?",
+    "options": [
+      "Within 72 hours of the monthly board meeting",
+      "Within 4 Hours of containment confirmation, including affected tenant IDs and forensic snapshot hashes",
+      "Within 14 calendar days after patching",
+      "Escalation is optional if egress was blocked"
+    ],
+    "correct": 2,
+    "rationale": "Per SOP-SLA-4.2, Severity-1 incidents require initial executive and legal escalation within 4 Hours of containment confirmation."
+  },
+  {
+    "id": "Q_4",
+    "source_id": "SOP-FORENSICS-2.2",
+    "source_quote": "record its SHA-256 digest in the incident ticket within 10 minutes",
+    "question": "Within what timeframe must the SHA-256 digest of a forensic snapshot be recorded in the incident ticket?",
+    "options": [
+      "Within 10 minutes of collection",
+      "At the end of the fiscal quarter",
+      "Only if requested by an external auditor",
+      "Within 48 hours of post-incident review"
+    ],
+    "correct": 1,
+    "rationale": "Per SOP-FORENSICS-2.2, every forensic snapshot must record its SHA-256 digest in the incident ticket within 10 minutes of collection."
+  },
+  {
+    "id": "Q_5",
+    "source_id": "NIST-800-61R3-S5.1",
+    "source_quote": "dual sign-off from the Incident Commander and Principal Security Engineer",
+    "question": "Which sign-off gate is required before restoring an isolated workload to production traffic?",
+    "options": [
+      "Verbal approval from an account executive",
+      "Dual sign-off from the Incident Commander and Principal Security Engineer verifying patch and regression tests",
+      "Automated container restart after 30 minutes",
+      "Single sign-off from the junior on-call observer"
+    ],
+    "correct": 2,
+    "rationale": "Per NIST-800-61R3-S5.1, restoration to production traffic requires dual sign-off from the Incident Commander and Principal Security Engineer."
+  }
+]

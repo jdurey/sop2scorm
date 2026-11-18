@@ -13,7 +13,8 @@ Deterministic, zero-dependency Node.js CLI and ESM library that compiles Markdow
 
 > [!TIP]
 > **Need full PDF/DOCX SOP ingestion, 3-model blind-solved scenario assessments, 1080p30 presenter-bookended diagram walkthrough videos, and Microsoft Word (`.docx`) SME Citation Tables delivered in 48 hours?**
-> Inspect the live interactive flagship build and Policy-Diff sandbox at **[scorm.stillhumanacademy.com/pilot](https://scorm.stillhumanacademy.com/pilot?src=github)**.
+> - Inspect the live interactive flagship build and Policy-Diff sandbox at **[scorm.stillhumanacademy.com/pilot](https://scorm.stillhumanacademy.com/pilot?src=github)**.
+> - Authoring in Rise 360 or rescuing compiled SCORM `.zip` courses? Install **[RiseKit for Rise 360: Theme, Gate & Backup Studio](https://chromewebstore.google.com/detail/risekit-for-rise-360-them/efgobfllpgjbbbnfckodiljfokafmfmf)** (free on Chrome Web Store) or launch **[UnbakeSCORM Studio](https://scorm.stillhumanacademy.com)**.
 
 ---
 
